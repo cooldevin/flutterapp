@@ -9,19 +9,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Welcome to Flutter',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
-        home: new Scaffold(
-          appBar: new AppBar(
-            title: new Text("Welcome to flutter"),
-          ),
-          body: new Center(
-            child: new Text("Hello World"),
-          ),
-        )
+        // title: 'Welcome to Flutter',
+        // theme: ThemeData(
+        //   primarySwatch: Colors.blue,
+        //   visualDensity: VisualDensity.adaptivePlatformDensity,
+        // ),
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text("Welcome to flutter"),
+      ),
+      body: Center(
+        child: Text("Hello World"),
+      ),
+    )
         //MyHomePage(title: 'Welcome to Flutter'),
         );
   }
@@ -47,16 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
-        
         title: Text(widget.title),
       ),
       body: Center(
-  
         child: Column(
-         
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
