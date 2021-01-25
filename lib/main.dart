@@ -9,19 +9,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // title: 'Welcome to Flutter',
-        // theme: ThemeData(
-        //   primarySwatch: Colors.blue,
-        //   visualDensity: VisualDensity.adaptivePlatformDensity,
-        // ),
+        title: 'Welcome to Flutter',
+        theme: ThemeData(
+          primarySwatch: Colors.brown,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("Welcome to flutter"),
-      ),
-      body: Center(
-        child: Text("Hello World"),
-      ),
-    )
+          appBar: AppBar(
+            title: Text("Welcome to flutter"),
+          ),
+          body: Center(
+            child: Text("Hello World"),
+          ),
+        )
         //MyHomePage(title: 'Welcome to Flutter'),
         );
   }
